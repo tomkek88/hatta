@@ -19,7 +19,7 @@ pipeline {
             }
         }
 
-        stae('deploy'){
+        stage('deploy'){
             steps{
                 echo 'deploying the application'
             }
