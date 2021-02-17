@@ -12,10 +12,11 @@ pipeline {
             
         }
 
-        stage('test'){
+        stage('e2e test'){
 
             steps{
                 echo 'testing the application'
+                sh "npm run cypress:ci"
             }
         }
 
