@@ -15,7 +15,7 @@ pipeline {
         stage('e2e test'){
 
             steps{
-                echo 'testing the application'
+                
                 sh "npx cypress run"
             }
         }
