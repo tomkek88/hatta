@@ -16,7 +16,7 @@ pipeline {
 
             steps{
                 echo 'testing the application'
-                sh "npm run cypress:ci"
+                sh "npx cypress run"
             }
         }
 
