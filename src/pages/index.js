@@ -38,6 +38,7 @@ const ImageWrapper = styled(Image)`
 const IndexPage = ({ data }) => (
   <div>
     <ContentWrapper>
+      {console.log(process.env)}
       <h1>Your New Space</h1>
       <p>
         While artists work from real to the abstract, architects must work from
