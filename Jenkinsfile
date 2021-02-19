@@ -13,10 +13,14 @@ pipeline {
         }
 
         stage('e2e test'){
-
-            steps{
-                sh "node_modules\.bin\cypress run "
+            agent{
+                node{
+                    steps{
+                        sh "npx cypress run "
+                    }
+                }
             }
+            
         }
 
         stage('deploy'){
